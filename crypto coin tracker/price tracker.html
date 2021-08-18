@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crypto Price Checker</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+
+    <!-- custom -->
+    <link href="css/custom.css" rel="stylesheet">
+	  
+	<!-- coingecko -->
+	<script src="js/coingecko-coin-ticker-widget.js"></script>
+	  
+	<!-- custom -->
+    <script src="js/custom.js"></script>
+	<script type="text/javascript">window.setTimeout(function(){ document.location.reload(true); }, 15000);</script>
+
+  </head>
+  <body onload="initPage()">
+	  <div>
+		  <h1 id="content_header">PRICE CHECK AS OF <span id="date_today">AUGUST 18, 2021</span> - 9AM</h1>
+	  </div>
+	  
+	  <h3 class="table-heading">NFT COINS</h3>
+	  <table id="nft_table">
+		  <tr>
+			  <td><coingecko-coin-ticker-widget  coin-id="cryptoblades" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+			  <td><coingecko-coin-ticker-widget  coin-id="cryptozoon" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+			  <td><coingecko-coin-ticker-widget  coin-id="coinary-token" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+		  </tr>
+		  <tr>
+			  <td><coingecko-coin-ticker-widget  coin-id="block-creatures" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+			  <td><coingecko-coin-ticker-widget  coin-id="smooth-love-potion" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+			  <td><coingecko-coin-ticker-widget  coin-id="axie-infinity" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+		  </tr>
+		  <tr>
+			  <td><coingecko-coin-ticker-widget  coin-id="plant-vs-undead-token" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+			  <td><coingecko-coin-ticker-widget  coin-id="my-defi-pet" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+			  <td><coingecko-coin-ticker-widget  coin-id="faraland" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+		  </tr>
+	  </table>
+	  
+	  <h3 class="table-heading">MAJOR COINS</h3>
+	  <table id="major_table">
+		  <tr>
+			  <td><coingecko-coin-ticker-widget  coin-id="ripple" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+			  <td><coingecko-coin-ticker-widget  coin-id="cardano" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+			  <td><coingecko-coin-ticker-widget  coin-id="binancecoin" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+		  </tr>
+		  <tr>
+			  <td><coingecko-coin-ticker-widget  coin-id="tether" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+			  <td><coingecko-coin-ticker-widget  coin-id="ethereum" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+			  <td><coingecko-coin-ticker-widget  coin-id="bitcoin" currency="php" locale="en" background-color="#ffffff"></coingecko-coin-ticker-widget></td>
+		  </tr>
+	  </table>
+	  <div>
+		  <img src="images/239337556_109665058090974_1830543054698465369_n.png" id="logo">
+	  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+  </body>
+</html>
