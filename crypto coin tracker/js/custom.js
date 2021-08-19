@@ -31,6 +31,10 @@ function setHour() {
 		}
 	}
 	
+	if (minutes < 10) {
+		minutes = "0" + minutes;
+	}
+	
   	var strTime = hours + ":" + minutes + " " + ampm;
 	console.log(strTime);
 	document.getElementById("time_now").innerHTML = strTime;
