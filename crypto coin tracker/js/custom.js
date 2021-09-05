@@ -25,14 +25,14 @@ function setHour() {
 	}
 	else {
 		ampm = "AM";
-		
-		if (hours = 0) {
-			hours = 12;
-		}
 	}
 	
 	if (minutes < 10) {
 		minutes = "0" + minutes;
+	}
+		
+	if (hours == 0) {
+		hours = 12;
 	}
 	
   	var strTime = hours + ":" + minutes + " " + ampm;
